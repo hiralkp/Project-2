@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>World Happiness Report</title>
+    <!-- <link rel="stylesheet" href="..static/css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  </head>
+
+<body>
+  <div class="container">
+      <!-- <div class="outer">
+          <img src="Happiness1.jpg">
+      </div>  -->
+    <header class="header"> 
+    </header>
+      <h1>World Happiness</h1> 
+  </div>
+
+  <div class="navbar">  
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/comparison">Comparison</a>
+    <a href="/analysis">Analysis</a>
+    <a href="/top-25">Top-25</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="custom-select">
+        <select id="selCountryRight" onchange="optionchanged(this.value)">
+          <option value="0">United States</option>
+        </select>
+      </div>
+      <div class ="box1">
+        <div id="compRightPie"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="custom-select">
+        <select id="selCountryLeft" placeholder="Select Year:" onchange="optionchanged(this.value)">
+          <option value="0">United Kingdom</option>
+        </select>
+      </div>  
+      <div class="box2">
+          <div id="compLeftPie"></div>
+      </div>
+    </div>
+  </div> 
+  <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/app_comparison.js"></script>
+</body>
+</html>

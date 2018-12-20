@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+  <meta charset="UTF-8">
+  <title>World Happiness Report</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/style_analysis.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+            <!-- <img src="Happiness1.jpg"> -->
+         </div>
+      <header class="header"> 
+      </header>
+        <h1>World Happiness</h1> 
+    </div>
+    
+     </div>
+    
+     <div class="navbar">  
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/comparison">Comparison</a>
+        <a href="/analysis">Analysis</a>
+        <a href="/top-25">Top-25</a>
+    </div>
+
+  <br>
+  <div class = "row1">
+    <div class = "col-md-12">
+      <h3>Analysis of the Social Progress Index and Happiness Ratings</h3>
+    </div>
+  </div>
+    <div class="row2">
+        <div class="col-md-12">
+          <div id = "scatter">
+          </div>    
+        </div>
+        </div>
+        <br>
+    <div class = "row3">
+      <div class = "col-md-12">
+        <p>The Social Progress Index is measured on a scale 0 to 100, while the Happiness Score is aggregated from its components,<br>
+          with a total range of 0 to 9.<br><br>
+        You will note that the three natural pairs of metrics on the Y and X axes naturally have a correlation.<br>
+      These natural pairs are:</p>
+      <ol>
+        <li>Social Progress Index (SPI) and Happiness Rating</li>
+        <li>Free Choice Score and Freedom Rating</li>
+        <li>Health Score and Life Expectancy Rating</li>
+      </ol>
+      </div>
+    </div>
+
+    <script src="../static/js/app_analysis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+</body>
+</html>
